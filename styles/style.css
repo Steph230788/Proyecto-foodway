@@ -1,0 +1,245 @@
+/* selector universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* variables*/
+:root {
+    --background-color: #f8f8f8;
+    --primary-color: #ed6300;
+    --secondary-color: #f4aa03;
+}
+
+/* Header y logo */
+header {
+    background-color: var(--background-color); /* Color de fondo */
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;  /* Ajusta el tamaño del logo */
+    height: auto;  /* Mantiene la proporción */
+}
+.footer .logo img {
+    width: 80px;  
+    height: auto;  
+}
+
+
+/*Navbar*/
+.navbar ul {
+    list-style: none;
+}
+a { 
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black;
+}
+.navbar ul li a {
+    font-size: 18px; 
+    font-weight: 500;
+    transition: color 0.3s ease; 
+  }
+  
+  .navbar ul li a:hover {
+    color:var(--primary-color); 
+  }
+
+
+/* Body */
+body {
+font-family: "Montserrat", serif;
+}
+.section-1 img {
+    width: 100%;       /* Ocupa todo el ancho de la pantalla */
+    height: 400px;     /* Ajusta la altura*/
+}
+.section-1 button{
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    padding: 12px 24px; /* Aumenta el tamaño del botón */
+    background-color: var(--primary-color); 
+    color: white; 
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar */
+    font-weight: bold; /* Texto en negrita */
+    transition: background 0.3s ease; /* Suaviza el cambio de color */
+}
+.section-1 button:hover {
+    background-color: var(--secondary-color);
+}
+.section-1 button{
+    font-family: "Montserrat", serif;
+}
+
+/* Sección platos */
+.platos img {
+    width: 150px;
+}
+.plato-info button {
+    font-size: 14px; 
+    padding: 10px 10px; 
+    background-color: var(--primary-color); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+.platos img {
+    width: 150px;
+    filter: drop-shadow(0px 10px 15px var(--secondary-color));
+}
+.platos button {
+    font-family: "Montserrat", serif;
+}
+
+/* Sección información */
+.btn-info {
+    font-size: 14px;
+    background-color: var(--primary-color);
+    color: #ffffff; 
+    font-size: 1rem; 
+    padding: 8px 18px; 
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; /* Centra el texto */
+  }
+.informacion-imagen img {
+    width: 100%;
+    max-width: 400px; /* Ajusta según necesites */
+    height: auto; /* Mantiene la proporción */
+    max-height: 300px; /* Evita que se estiren demasiado */
+    object-fit: contain; /* Evita que se recorten */
+}
+.flecha {
+    font-size: 30px; /* Aumenta el tamaño de la flecha */
+    color: var(--primary-color); /* Aplica el color definido */
+    background: none; /* Sin fondo */
+    border: none; /* Sin bordes */
+}
+.btn-info{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+/* Footer */
+.footer-redes img {
+    width: 30px;  
+    height: auto; 
+}
+.footer-redes ul {
+    list-style: none;
+}
+.footer-info ul {
+    list-style: none;
+}
+.footer-info ul li a:hover {
+    color: var(--primary-color);
+  }
+  .footer {
+    background-color: var(--background-color);
+  }
+  
+/* PÁGINA MENÚ */
+.menu img {
+    width: 50px;  /* Ajusta el tamaño según preferencia */
+    height: auto; /* Mantiene la proporción */
+}
+.menu ul li h3 {
+    color: black; 
+    font-weight: 500; /* Reduce el grosor de la fuente */
+    transition: color 0.3s ease; /* Efecto de transición suave */
+}
+
+.menu ul li:hover h3 {
+    color: var(--secondary-color); /* Color al pasar el cursor */
+ } 
+
+/* CARDS */
+    .btn-precio {
+        background-color: var(--primary-color);
+        color: white; 
+        font-size: 14px; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 8px;
+        font-weight: 600;
+      
+    }
+    .menu-container .menu-item img {
+        width: 300px;
+    }
+
+/* PÁGINA NOSOTROS */
+/* Estilos para la sección de contacto */
+.contact-info {
+    list-style: none; 
+}
+.about-image img {
+    width: 100%; /* Ajusta el tamaño al 50% del contenedor */
+    max-width: 600px; /* Limita el tamaño máximo */
+}
+.ubicacion iframe {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según lo que se necesite */
+    border: 0;
+}
+
+/* PÁGINA OPINIONES */
+.resenas-clientes p {
+    font-style: italic;
+  }
+  .formulario-opinion button {
+    background-color: var(--primary-color); 
+    color: white; 
+    font-size: 16px; 
+    padding: 8px 18px; 
+    border: none; 
+    border-radius: 5px; 
+    font-weight: 500
+  }
+  .formulario-campos {
+    width: 33%; /* Limita el ancho al tercio de la página */
+  }
+  
+  .formulario-opinion input,
+  .formulario-opinion textarea {
+      width: 100%; /* Se ajustan al contenedor */
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: inherit; /* Hace que herede la fuente del contenedor */
+      background-color: var(--background-color);
+  }
+
+  /* PÁGINA GALERÍA */
+  /* Estilos del input */
+.input-correo {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px; /* Para que no se expanda demasiado */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Estilos del botón */
+.btn-enviar {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 18px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+.eventos-grid .evento img {
+    width: 400px;  
+    height: auto;  
+    border-radius: 8px; 
+}
