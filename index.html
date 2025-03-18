@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- link css -->
     <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +27,67 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html">
-        <img src="./img/logo.png" alt="Logo Food Way" />
-      </a>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="Bootstrap" width="30" height="24" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     </header>
     <nav class="navbar">
       <ul>
@@ -30,6 +99,25 @@
       </ul>
     </nav>
     <main>
+      <div class="position-relative">
+        <img
+          class="imagen-banner"
+          src="./img/img-banner.jpg"
+          alt="banner image"
+        />
+        <div class="position-absolute top-50 start-50">
+          <button class="btn">btn info</button>
+        </div>
+        <h1>Food Way</h1>
+        <p>
+          Somos una comida gastronómica que busca brindarte la mejor experiencia
+          culinaria. Nuestros platos frescos y deliciosos son la base de nuestras
+          recetas. ����nete a nuestra familia de restaurantes y disfruta de un sabor
+          sin límites!
+        </p>
+        <button>Conocer más</button>
+      </div>
+
       <!-- Sección banner -->
       <section class="section-1">
         <img src="./img/img-banner.jpg" alt="imagen banner" />
@@ -42,154 +130,192 @@
       </section>
 
       <!-- Sección favoritos -->
-        <section class="favoritos">
-            <h2 class="comida-titulo">Los favoritos de siempre</h2>
+      <section class="favoritos">
+        <h2 class="comida-titulo">Los favoritos de siempre</h2>
+        <p>
+          Hay sabores que simplemente conquistan a todos. Descubre nuestros
+          productos más populares, elegidos por quienes saben disfrutar de una
+          buena comida. ¡Déjate tentar y prueba los imperdibles!
+        </p>
+        <div class="platos">
+          <article>
+            <img src="./img/hamburguesa.png" alt="hamburguesa clásica" />
+            <h3>Hamburguesa clásica</h3>
             <p>
-              Hay sabores que simplemente conquistan a todos. Descubre nuestros productos más populares, elegidos por quienes saben disfrutar de una buena comida. ¡Déjate tentar y prueba los imperdibles! 
+              Carne jugosa, pan artesanal y el balance perfecto de ingredientes.
+              ¡Sencillamente deliciosa!
             </p>
-            <div class="platos">
-              <article>
-                <img src="./img/hamburguesa.png" alt="hamburguesa clásica">
-                <h3>Hamburguesa clásica</h3>
-                <p>
-                  Carne jugosa, pan artesanal y el balance perfecto de ingredientes. ¡Sencillamente deliciosa!
-                </p>
-                <div class="plato-info">
-                  <button type="button">$27.900</button>
-                </div>
-              </article>
-
-              <article>
-                <img src="./img/pollo-frito.png" alt="pollo crispy">
-                <h3>Pollo crispy</h3>
-                <p>
-                  Crujiente por fuera, tierno por dentro y con un toque especial. ¡Puro placer en cada bocado!
-                </p>
-                <div class="plato-info">
-                  <button type="button">$40.900</button>
-                </div>
-              </article>
-
-              <article>
-                <img src="./img/papas-fritas.png" alt="papas fritas">
-                <h3>Papas fritas</h3>
-                <p>
-                  Papas doradas, crujientes y con un sabor único. ¡El acompañamiento perfecto!
-                </p>
-                <div class="plato-info">
-                  <button type="button">$8.500</button>
-                </div>
-              </article>
-
-              <article>
-                <img src="./img/hamburguesa-grande.png" alt="hamburguesa XL">
-                <h3>Hamburguesa XL</h3>
-                <p>
-                  Hamburguesa triple carne 100% artesanal. La más poderosa, para los de buen apetito.
-                </p>
-                <div class="plato-info">
-                  <button type="button">$39.000</button>
-                </div>
-              </article>
+            <div class="plato-info">
+              <button type="button">$27.900</button>
             </div>
-        </section>
+          </article>
 
+          <article>
+            <img src="./img/pollo-frito.png" alt="pollo crispy" />
+            <h3>Pollo crispy</h3>
+            <p>
+              Crujiente por fuera, tierno por dentro y con un toque especial.
+              ¡Puro placer en cada bocado!
+            </p>
+            <div class="plato-info">
+              <button type="button">$40.900</button>
+            </div>
+          </article>
 
-        <!-- Sección información -->
-        <section class="informacion">
-          <button class="flecha izquierda">&#10094;</button> <!-- Flecha izquierda -->
-        
-          <div class="informacion-slider">
-            <!-- Hamburguesas -->
-            <div class="informacion-item active">
-              <div class="informacion-texto">
-                <h2 class="informacion-titulo">Nuestras hamburguesas</h2>
-                <p>Más que un clásico, nuestras hamburguesas están hechas con ingredientes frescos y seleccionados. Descubre cómo las preparamos y explora opciones especiales, incluyendo pan sin gluten y alternativas más ligeras.</p>
-                <button class="btn-info" type="button">Más información</button>
-              </div>
-              <div class="informacion-imagen">
-                <img src="./img/nuestra-hamburguesa.png" alt="Hamburguesa">
-              </div>
+          <article>
+            <img src="./img/papas-fritas.png" alt="papas fritas" />
+            <h3>Papas fritas</h3>
+            <p>
+              Papas doradas, crujientes y con un sabor único. ¡El acompañamiento
+              perfecto!
+            </p>
+            <div class="plato-info">
+              <button type="button">$8.500</button>
             </div>
-        
-            <!-- Pizzas -->
-            <div class="informacion-item">
-              <div class="informacion-texto">
-                <h2 class="informacion-titulo">Nuestras pizzas</h2>
-                <p>Más que un clásico, nuestras pizzas se preparan con masa artesanal y los ingredientes más frescos para garantizar un sabor inigualable. Explora nuestras combinaciones únicas y opciones especiales, como masa integral, sin gluten o extra crujiente. Cada rebanada es una experiencia irresistible. ¡Déjate tentar!</p>
-                <button class="btn-info" type="button">Más información</button>
-              </div>
-              <div class="informacion-imagen">
-                <img src="./img/nuestra-pizza.png" alt="Pizza">
-              </div>
+          </article>
+
+          <article>
+            <img src="./img/hamburguesa-grande.png" alt="hamburguesa XL" />
+            <h3>Hamburguesa XL</h3>
+            <p>
+              Hamburguesa triple carne 100% artesanal. La más poderosa, para los
+              de buen apetito.
+            </p>
+            <div class="plato-info">
+              <button type="button">$39.000</button>
             </div>
-        
-            <!-- Pollo -->
-            <div class="informacion-item">
-              <div class="informacion-texto">
-                <h2 class="informacion-titulo">Nuestro pollo</h2>
-                <p>Más que un antojo, nuestro pollo crispy se prepara con un empanizado dorado y crujiente, logrando el equilibrio perfecto entre jugosidad y sabor. Disfrútalo en su versión clásica o con opciones especiales, como recetas picantes o libres de gluten. Cada bocado es pura satisfacción. ¡Pruébalo y sorpréndete!</p>
-                <button class="btn-info" type="button">Más información</button>
-              </div>
-              <div class="informacion-imagen">
-                <img src="./img/Nuestro-pollo.png" alt="Pollo">
-              </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sección información -->
+      <section class="informacion">
+        <button class="flecha izquierda">&#10094;</button>
+        <!-- Flecha izquierda -->
+
+        <div class="informacion-slider">
+          <!-- Hamburguesas -->
+          <div class="informacion-item active">
+            <div class="informacion-texto">
+              <h2 class="informacion-titulo">Nuestras hamburguesas</h2>
+              <p>
+                Más que un clásico, nuestras hamburguesas están hechas con
+                ingredientes frescos y seleccionados. Descubre cómo las
+                preparamos y explora opciones especiales, incluyendo pan sin
+                gluten y alternativas más ligeras.
+              </p>
+              <button class="btn-info" type="button">Más información</button>
+            </div>
+            <div class="informacion-imagen">
+              <img src="./img/nuestra-hamburguesa.png" alt="Hamburguesa" />
             </div>
           </div>
-        
-          <button class="flecha derecha">&#10095;</button> <!-- Flecha derecha -->
-        </section>
 
-
-        <!-- footer -->
-        <footer class="footer">
-            <div class="footer-container">
-
-                <!-- Logo y reseña -->
-                <div class="footer-logo">
-                    <a class="logo" href="#">
-                        <img src="./img/logo.png" alt="Logo Food Way" />
-                      </a>
-                      <p>
-                        Más que un restaurante, un destino para los amantes del buen sabor.
-                        En Bogotá, te invitamos a disfrutar de una experiencia auténtica,
-                        rápida y llena de actitud. ¡Aquí el sabor es el protagonista!
-                      </p>
-                      </div>
-
-                      <!-- Contacto -->
-                      <div class="footer-contacto">
-                        <h4>Contacto</h4>
-                        <address>
-                            <p>Calle 123 #45-67, Bogotá, Colombia</p>
-                            <p>+57 310 123 4567 | +57 320 765 4321</p>
-                            <p><a href="mailto:contacto@foodway.com">contacto@foodway.com</a></p>
-                         </address>
-                     </div>
-
-                     <!-- Más información -->
-                     <div class="footer-info">
-                        <h4>Más Información</h4>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="./pages/menu.html">Menú</a></li>
-                            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                            <li><a href="./pages/blog.html">Blog</a></li>
-                            <li><a href="./pages/galeria.html">Galería</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Redes sociales -->
-                    <div class="footer-redes">
-                        <h4>Redes sociales</h4>
-                        <ul>
-                            <li><a href="#"><img src="./img/icon-facebook.png" alt="Facebook" /></a></li>
-                            <li><a href="#"><img src="./img/icon-instagram.png" alt="Instagram" /></a></li>
-                            <li><a href="#"><img src="./img/icon-twitter.png" alt="Twitter" /></a></li>
-                        </ul>
-                    </div>
+          <!-- Pizzas -->
+          <div class="informacion-item">
+            <div class="informacion-texto">
+              <h2 class="informacion-titulo">Nuestras pizzas</h2>
+              <p>
+                Más que un clásico, nuestras pizzas se preparan con masa
+                artesanal y los ingredientes más frescos para garantizar un
+                sabor inigualable. Explora nuestras combinaciones únicas y
+                opciones especiales, como masa integral, sin gluten o extra
+                crujiente. Cada rebanada es una experiencia irresistible.
+                ¡Déjate tentar!
+              </p>
+              <button class="btn-info" type="button">Más información</button>
             </div>
-        </footer>
+            <div class="informacion-imagen">
+              <img src="./img/nuestra-pizza.png" alt="Pizza" />
+            </div>
+          </div>
+
+          <!-- Pollo -->
+          <div class="informacion-item">
+            <div class="informacion-texto">
+              <h2 class="informacion-titulo">Nuestro pollo</h2>
+              <p>
+                Más que un antojo, nuestro pollo crispy se prepara con un
+                empanizado dorado y crujiente, logrando el equilibrio perfecto
+                entre jugosidad y sabor. Disfrútalo en su versión clásica o con
+                opciones especiales, como recetas picantes o libres de gluten.
+                Cada bocado es pura satisfacción. ¡Pruébalo y sorpréndete!
+              </p>
+              <button class="btn-info" type="button">Más información</button>
+            </div>
+            <div class="informacion-imagen">
+              <img src="./img/Nuestro-pollo.png" alt="Pollo" />
+            </div>
+          </div>
+        </div>
+
+        <button class="flecha derecha">&#10095;</button>
+        <!-- Flecha derecha -->
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y reseña -->
+          <div class="footer-logo">
+            <a class="logo" href="#">
+              <img src="./img/logo.png" alt="Logo Food Way" />
+            </a>
+            <p>
+              Más que un restaurante, un destino para los amantes del buen
+              sabor. En Bogotá, te invitamos a disfrutar de una experiencia
+              auténtica, rápida y llena de actitud. ¡Aquí el sabor es el
+              protagonista!
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="footer-contacto">
+            <h4>Contacto</h4>
+            <address>
+              <p>Calle 123 #45-67, Bogotá, Colombia</p>
+              <p>+57 310 123 4567 | +57 320 765 4321</p>
+              <p>
+                <a href="mailto:contacto@foodway.com">contacto@foodway.com</a>
+              </p>
+            </address>
+          </div>
+
+          <!-- Más información -->
+          <div class="footer-info">
+            <h4>Más Información</h4>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="./pages/menu.html">Menú</a></li>
+              <li><a href="./pages/nosotros.html">Nosotros</a></li>
+              <li><a href="./pages/blog.html">Blog</a></li>
+              <li><a href="./pages/galeria.html">Galería</a></li>
+            </ul>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="footer-redes">
+            <h4>Redes sociales</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./img/icon-facebook.png" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/icon-instagram.png" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/icon-twitter.png" alt="Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
