@@ -239,7 +239,8 @@ body {
 
 
 
-/* HEADER */
+
+/* HEADER Boots */
 /* Reducción del espacio del nav cuando el menú hamburguesa esté activo */
 @media (max-width: 768px) {
   .navbar-collapse.show .navbar-nav {
@@ -256,3 +257,6 @@ body {
       gap: 50px;                                                                      /* Aumenta el espacio entre los elementos del menú */
     }
   }
+
+
+  
