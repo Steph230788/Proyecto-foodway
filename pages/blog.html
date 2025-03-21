@@ -55,115 +55,86 @@
     </nav>
   </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="resenas-clientes">
-      <h1>Reseñas de nuestros clientes</h1>
-      <div class="resenas-container">
-        <div class="resena">
-          <img
-            class="resena-imgen"
-            src="../img/avatar-hombre.png"
-            alt="Avatar Juan Pérez"
-          />
-          <h3>Juan Pérez</h3>
-          <p>
-            "La mejor hamburguesa que he probado en mucho tiempo. Ingredientes
-            frescos, carne jugosa y un sabor increíble. ¡Definitivamente
-            volveré!""La mejor hamburguesa que he probado en mucho tiempo.
-            Ingredientes frescos, carne jugosa y un sabor increíble.
-            ¡Definitivamente volveré!".
-          </p>
-        </div>
-
-        <div class="resena">
-          <img
-            class="resena-imgen"
-            src="../img/avatar-mujer.png"
-            alt="Avatar Carolona Martínez"
-          />
-          <h3>Carolina Martinez</h3>
-          <p>
-            "El pollo crispy es crujiente y delicioso, se nota la calidad en
-            cada bocado. Además, el ambiente del lugar es perfecto para
-            compartir con amigos".
-          </p>
-        </div>
-
-        <div class="resena">
-          <img
-            class="resena-imgen"
-            src="../img/avatar-hombre.png"
-            alt="Avatar Andrés Gómez"
-          />
-          <h3>Andrés Gómez</h3>
-          <p>
-            "Amo la pizza de Food Way, la masa es perfecta y los ingredientes
-            son de primera. ¡Se siente el verdadero sabor italiano!".
-          </p>
-        </div>
-
-        <div class="resena">
-          <img
-            class="resena-imgen"
-            src="../img/avatar-mujer.png"
-            alt="Avatar Sofía Rodríguez"
-          />
-          <h3>Sofía Rodríguez</h3>
-          <p>
-            "Los postres son otro nivel, especialmente el sundae. Es el cierre
-            perfecto para una comida espectacular. ¡Recomendadísimo!".
-          </p>
-        </div>
+  <!-- Sección de Reseñas de Clientes -->
+<section class="resenas-clientes container text-center py-5">
+  <h1 class="mb-4">Reseñas de nuestros clientes</h1>
+  <div class="row">
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="resena p-3 shadow-sm rounded d-flex flex-column h-100">
+        <img class="resena-imgen img-fluid mb-2 mx-auto" src="../img/avatar-hombre.png" alt="Avatar Juan Pérez" />
+        <h3 class="fs-5">Juan Pérez</h3>
+        <p class="text-muted flex-grow-1">
+          "La mejor hamburguesa que he probado en mucho tiempo. Ingredientes frescos, carne jugosa y un sabor increíble. ¡Definitivamente volveré!"
+        </p>
       </div>
-    </section>
+    </div>
 
-    <!-- Sección formulario de opiniones -->
-    <section class="opiniones-clientes">
-      <h2>Tu opinión es muy importante para nosotros</h2>
-      <p>
-        Comparte tus comentarios o sugerencias y ayúdanos a seguir innovando.
-        Cada opinión nos motiva a perfeccionar nuestros sabores, servicio y
-        experiencia para que cada visita a <strong>Food Way</strong> sea aún más
-        increíble.
-      </p>
-      <p>
-        <strong>¡Tu voz es el ingrediente secreto que nos hace únicos!</strong>
-      </p>
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="resena p-3 shadow-sm rounded d-flex flex-column h-100">
+        <img class="resena-imgen img-fluid mb-2 mx-auto " src="../img/avatar-mujer.png" alt="Avatar Carolina Martínez" />
+        <h3 class="fs-5">Carolina Martínez</h3>
+        <p class="text-muted flex-grow-1">
+          "El pollo crispy es crujiente y delicioso, se nota la calidad en cada bocado. Además, el ambiente del lugar es perfecto para compartir con amigos."
+        </p>
+      </div>
+    </div>
 
-      <form class="formulario-opinion">
-        <div class="formulario-contenedor">
-          <div class="formulario-imagen">
-            <img src="../img/comentarios.png" alt="imagen de comentarios" />
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="resena p-3 shadow-sm rounded d-flex flex-column h-100">
+        <img class="resena-imgen img-fluid mb-2 mx-auto" src="../img/avatar-hombre.png" alt="Avatar Andrés Gómez" />
+        <h3 class="fs-5">Andrés Gómez</h3>
+        <p class="text-muted flex-grow-1">
+          "Amo la pizza de Food Way, la masa es perfecta y los ingredientes son de primera. ¡Se siente el verdadero sabor italiano!"
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="resena p-3 shadow-sm rounded d-flex flex-column h-100">
+        <img class="resena-imgen img-fluid mb-2 mx-auto" src="../img/avatar-mujer.png" alt="Avatar Sofía Rodríguez" />
+        <h3 class="fs-5">Sofía Rodríguez</h3>
+        <p class="text-muted flex-grow-1">
+          "Los postres son otro nivel, especialmente el sundae. Es el cierre perfecto para una comida espectacular. ¡Recomendadísimo!"
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Formulario de Opiniones -->
+<section class="opiniones-clientes container py-5 mb-5">
+  <h2 class="text-center">Tu opinión es muy importante para nosotros</h2>
+  <div class="mt-4">
+  <p class="text-center">
+    Comparte tus comentarios o sugerencias y ayúdanos a seguir innovando. Cada opinión nos motiva a perfeccionar nuestros sabores, servicio y experiencia para que cada visita a <strong>Food Way</strong> sea aún más increíble.
+  </p>
+  <p class="text-center fw-bold">¡Tu voz es el ingrediente secreto que nos hace únicos!</p>
+
+  <div class="row align-items-center">
+      <!-- Imagen -->
+      <div class="col-md-6 text-center">
+        <img src="../img/comentarios.png" alt="imagen de comentarios" class="img-fluid rounded">
+      </div>
+  
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <form class="p-4 ">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Digita tu nombre">
           </div>
-          <div class="formulario-campos">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Digita tu nombre" />
 
-            <label for="comentario">Comentario</label>
-            <textarea
-              id="comentario"
-              placeholder="Describe tu experiencia"
-            ></textarea>
-
-            <button type="submit">Enviar</button>
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentario</label>
+            <textarea id="comentario" class="form-control" placeholder="Describe tu experiencia" rows="4"></textarea>
           </div>
-        </div>
-      </form>
-    </section>
+  
+          <button type="submit" class="btn btn-custom w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    
     <!-- Footer -->
    <footer class="bg-light text-dark py-4">
     <div class="container">

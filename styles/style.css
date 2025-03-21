@@ -69,6 +69,25 @@ ul {
     margin-top: -40px; 
   }
 
+  /*Página blog*/
+  .resena-imgen {
+    max-width: 120px;  
+    height: auto;      
+  }
+  .opiniones-clientes {
+    padding-bottom: 80px; /* Ajusta el valor según lo necesario */
+  }
+  .btn-custom {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+    font-weight: bold !important;
+  }
+  .btn-custom:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+  }
+  
 
 
 
