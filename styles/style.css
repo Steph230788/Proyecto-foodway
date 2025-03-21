@@ -19,7 +19,8 @@ ul {
   --primary-color: #ed6300;
   --secondary-color: #f4aa03;
 }
-/* Sección Galería */  
+
+/* Página Galería */  
  /* Input de correo */
 .suscripcion .form-control {
     border: 2px solid var(--primary-color);
@@ -57,6 +58,22 @@ ul {
   .text-muted {
     margin-bottom: 2rem;
   }
+
+  /* Página Nosotros */
+/*Ajuste del espacio mapa*/
+.ubicacion {
+    margin-bottom: 80px; 
+  }
+/*Ajuste del espacio*/
+  .ubicacion {
+    margin-top: -40px; 
+  }
+
+
+
+
+
+
 
 
 
@@ -258,6 +275,7 @@ body {
   font-family: inherit; /* Hace que herede la fuente del contenedor */
   background-color: var(--background-color);
 }
+
 
 
 
