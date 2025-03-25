@@ -20,85 +20,100 @@ ul {
   --secondary-color: #f4aa03;
 }
 
-/* Página Galería */  
- /* Input de correo */
+/* Página Galería */
+/* Input de correo */
 .suscripcion .form-control {
-    border: 2px solid var(--primary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-  }
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
 /* Efecto en el input cuando está enfocado */
 .suscripcion .form-control:focus {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 5px rgba(244, 170, 3, 0.5);
-  }
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px rgba(244, 170, 3, 0.5);
+}
 /* Botón de enviar */
 .suscripcion .btn-secondary {
-    background-color: var(--primary-color) !important;
-    border: none;
-    color: white;
-    padding: 0.6rem 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
+  background-color: var(--primary-color) !important;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
 /* Hover en el botón */
 .suscripcion .btn-secondary:hover,
 .suscripcion .btn-secondary:focus,
 .suscripcion .btn-secondary:active {
-    background-color: var(--secondary-color) !important;
-    border-color: var(--secondary-color) !important;
-    color: white !important;
-    box-shadow: none !important;
-  }
-  .suscripcion {
-    margin-bottom: 6rem;
-  }
-  .text-muted {
-    margin-bottom: 2rem;
-  }
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+.suscripcion {
+  margin-bottom: 6rem;
+}
+.text-muted {
+  margin-bottom: 2rem;
+}
 
-  /* Página Nosotros */
+/* Página Nosotros */
 /*Ajuste del espacio mapa*/
 .ubicacion {
-    margin-bottom: 80px; 
-  }
+  margin-bottom: 80px;
+}
 /*Ajuste del espacio*/
-  .ubicacion {
-    margin-top: -40px; 
-  }
+.ubicacion {
+  margin-top: -40px;
+}
 
-  /*Página blog*/
-  .resena-imgen {
-    max-width: 120px;  
-    height: auto;      
-  }
-  .opiniones-clientes {
-    padding-bottom: 80px; /* Ajusta el valor según lo necesario */
-  }
-  .btn-custom {
-    background-color: var(--primary-color) !important;
-    border-color: var(--primary-color) !important;
-    color: white !important;
-    font-weight: bold !important;
-  }
-  .btn-custom:hover {
-    background-color: var(--secondary-color) !important;
-    border-color: var(--secondary-color) !important;
-  }
-  
+/*Página blog*/
+.resena-imgen {
+  max-width: 120px;
+  height: auto;
+}
+.opiniones-clientes {
+  padding-bottom: 80px; /* Ajusta el valor según lo necesario */
+}
+.btn-custom {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.btn-custom:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
 
-
-
-
-
-
-
-
-
-
-
+/*Tab Menú*/
+.menu h2 {
+    font-weight: 600 !important;
+}
+.menu-icons {
+    gap: 20px; /* Espacio entre iconos */
+    padding: 10px 0;
+}
+.menu-img {
+    max-width: 100px; /* Tamaño base */
+    height: auto;
+}
+.menu {
+    padding-top: 40px;  /* Espacio entre el header y el título */
+}
+.menu h2 {
+    margin-bottom: 30px;  /* Espacio entre el título y las opciones del menú */
+}
+.menu-icons h4 {
+    font-weight: 550 !important; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.menu-icons h4:hover {
+    color:var(--primary-color); /* Cambia el color al pasar el mouse (puedes modificarlo) */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
 
 
 
@@ -295,31 +310,35 @@ body {
   background-color: var(--background-color);
 }
 
-
-
-
-
-
-
-
-
 /* HEADER BOOTS */
 /* Reducción del espacio del nav cuando el menú hamburguesa esté activo */
 @media (max-width: 768px) {
   .navbar-collapse.show .navbar-nav {
     display: flex !important;
-    flex-direction: column !important;                                                 /* Asegura disposición vertical */
-    gap: 5px !important;                                                               /* Ajusta el espacio entre los elementos */
+    flex-direction: column !important; /* Asegura disposición vertical */
+    gap: 5px !important; /* Ajusta el espacio entre los elementos */
     justify-content: center !important;
     align-items: center !important;
   }
 }
 @media (min-width: 768px) {
-    .navbar-nav {
-      display: flex;
-      gap: 50px;                                                                      /* Aumenta el espacio entre los elementos del menú */
-    }
+  .navbar-nav {
+    display: flex;
+    gap: 50px; /* Aumenta el espacio entre los elementos del menú */
   }
+}
 
+/*tab menú*/
+@media (max-width: 768px) {
+    .menu-icons {
+        gap: 10px; /* Reduce el espacio en mobile */
+    }
 
-  
+    .menu-img {
+        max-width: 40px !important; /* Reduce el tamaño en mobile */
+    }
+
+    .menu-icons h4 {
+        font-size: 0.9rem; /* Reduce el texto en mobile */
+    }
+}
