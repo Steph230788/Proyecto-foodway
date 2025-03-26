@@ -155,6 +155,15 @@ ul {
 
 
 
+
+
+
+
+
+
+
+
+
 /* OTROS */
 
 /* Header y logo */
@@ -404,5 +413,23 @@ body {
     /* Ocultar los iconos en pantallas pequeñas si no caben */
     .nav-tabs .nav-link img {
         display: none;
+    }
+}
+/**ajuste inf cards productos**/
+@media (max-width: 768px) {
+    h5 {
+        font-size: 1.1rem !important; /* Reduce el tamaño del título */
+    }
+
+    p {
+        font-size: 0.875rem; /* Reduce el tamaño del texto */
+    }
+    .btn-precio {
+        font-size: 0.875rem; /* Reduce el tamaño del precio */
+        padding: 8px 12px; /* Ajusta el padding para que no se vea muy grande */
+    }
+    .menu-item img {
+        max-width: 130px !important; /* Fuerza la reducción de las imágenes */
+        height: auto !important;
     }
 }
