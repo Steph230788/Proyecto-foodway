@@ -115,7 +115,37 @@ ul {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño */
 }
 
+/**Opciones del menú**/
+/* Cambiar el color del texto del menú */
+.nav-tabs .nav-link {
+    color: black !important; 
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 12px 24px; /* Espaciado interno para mayor separación */
+}
+/* Cambiar el color del texto cuando está activo */
+.nav-tabs .nav-link.active {
+    color: var(--primary-color) !important;  /* Color cuando está seleccionado */
+    font: weight 200px;; /* Hacerlo más grueso */
+}
+/* Separación entre los elementos del menú */
+.nav-item {
+    margin-right: 0px; /* Espacio entre las opciones */
+}
+/* Estilos para el menú de pestañas */
+.nav-tabs {
+    flex-wrap: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+    white-space: nowrap; /* Evita que los textos se dividan en varias líneas */
+}
 
+/* Estilo personalizado para los botones de precios */
+.btn-precio {
+    background-color: var(--primary-color); /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 6px 8px !important;
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+}
 
 
 
@@ -340,5 +370,39 @@ body {
 
     .menu-icons h4 {
         font-size: 0.9rem; /* Reduce el texto en mobile */
+    }
+}
+/*cards de menú*/
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item .col-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-item .col-9 {
+        width: 100%;
+    }
+}
+/* Ajuste del tamaño de fuente en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-tabs .nav-link {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+        padding: 8px 12px; /* Reduce el espacio entre las opciones */
+    }
+
+    .nav-item {
+        margin-right: 5px; /* Reduce la separación entre elementos */
+    }
+
+    /* Ocultar los iconos en pantallas pequeñas si no caben */
+    .nav-tabs .nav-link img {
+        display: none;
     }
 }
