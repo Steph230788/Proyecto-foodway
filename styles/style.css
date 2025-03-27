@@ -90,62 +90,141 @@ ul {
 
 /*Tab Menú*/
 .menu h2 {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 .menu-icons {
-    gap: 20px; /* Espacio entre iconos */
-    padding: 10px 0;
+  gap: 20px; /* Espacio entre iconos */
+  padding: 10px 0;
 }
 .menu-img {
-    max-width: 100px; /* Tamaño base */
-    height: auto;
+  max-width: 100px; /* Tamaño base */
+  height: auto;
 }
 .menu {
-    padding-top: 40px;  /* Espacio entre el header y el título */
+  padding-top: 40px; /* Espacio entre el header y el título */
 }
 .menu h2 {
-    margin-bottom: 30px;  /* Espacio entre el título y las opciones del menú */
+  margin-bottom: 30px; /* Espacio entre el título y las opciones del menú */
 }
 .menu-icons h4 {
-    font-weight: 550 !important; 
-    transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 550 !important;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 .menu-icons h4:hover {
-    color:var(--primary-color); /* Cambia el color al pasar el mouse (puedes modificarlo) */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  color: var(
+    --primary-color
+  ); /* Cambia el color al pasar el mouse (puedes modificarlo) */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
 }
 
 /**Opciones del menú**/
 /* Cambiar el color del texto del menú */
 .nav-tabs .nav-link {
-    color: black !important; 
-    font-size: 18px; /* Tamaño de fuente */
-    padding: 12px 24px; /* Espaciado interno para mayor separación */
+  color: black !important;
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 12px 24px; /* Espaciado interno para mayor separación */
 }
 /* Cambiar el color del texto cuando está activo */
 .nav-tabs .nav-link.active {
-    color: var(--primary-color) !important;  /* Color cuando está seleccionado */
-    font: weight 200px;; /* Hacerlo más grueso */
+  color: var(--primary-color) !important; /* Color cuando está seleccionado */
+  font: weight 200px; /* Hacerlo más grueso */
 }
 /* Separación entre los elementos del menú */
 .nav-item {
-    margin-right: 0px; /* Espacio entre las opciones */
+  margin-right: 0px; /* Espacio entre las opciones */
 }
 /* Estilos para el menú de pestañas */
 .nav-tabs {
-    flex-wrap: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
-    white-space: nowrap; /* Evita que los textos se dividan en varias líneas */
+  flex-wrap: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+  white-space: nowrap; /* Evita que los textos se dividan en varias líneas */
 }
 
 /* Estilo personalizado para los botones de precios */
 .btn-precio {
-    background-color: var(--primary-color); /* Cambia el color de fondo */
-    color: white; /* Cambia el color del texto */
-    font-weight: bold; /* Texto en negrita */
-    padding: 6px 8px !important;
-    border-radius: 5px; /* Bordes redondeados */
-    border: none; /* Sin borde */
+  background-color: var(--primary-color); /* Cambia el color de fondo */
+  color: white; /* Cambia el color del texto */
+  font-weight: bold; /* Texto en negrita */
+  padding: 6px 8px !important;
+  border-radius: 5px; /* Bordes redondeados */
+  border: none; /* Sin borde */
 }
+
+/**Sección inicio**/
+/*Contenedor del banner */
+.banner-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/*Imagen del banner */
+.banner-img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px; /*  Evita que la imagen se corte demasiado en móviles */
+  object-fit: cover; /* Ajusta sin distorsionar */
+}
+/*Contenido del banner */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 600px;
+}
+.btn-explorar-comida {
+  background-color: var(
+    --primary-color
+  ) !important; /* Color de fondo primario */
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-explorar-comida:hover {
+    background-color: var(--secondary-color) !important; /* Color secundario en hover */
+    color: white !important;
+  }
+  .banner-content p {
+    font-weight: 500 !important; /* 400 es normal, 700 es bold */
+  }
+
+/**cards index**/
+.card.shadow-sm {
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(225, 189, 122, 0.3) !important; /* Sombra más oscura */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background: white;
+  }
+  
+  .card.shadow-sm:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0px 10px 20px rgba(247, 216, 158, 0.5) !important; /* Sombra más intensa */
+  }
+  .bton-precio-card {
+    color: white !important; /* Hace que la letra sea blanca */
+    font-weight: 600 !important; /* Aumenta el peso de la fuente */
+    background-color: var(--primary-color) !important; /* Color principal */
+    border: none; /* Quita el borde */
+  }
+  h2.fw-bold {
+    margin-bottom: 30px !important; 
+  }
+  
+  p.mb-4 {
+    margin-top: 20px !important;
+  }
+
+
 
 
 
@@ -369,67 +448,134 @@ body {
 
 /*tab menú*/
 @media (max-width: 768px) {
-    .menu-icons {
-        gap: 10px; /* Reduce el espacio en mobile */
-    }
+  .menu-icons {
+    gap: 10px; /* Reduce el espacio en mobile */
+  }
 
-    .menu-img {
-        max-width: 40px !important; /* Reduce el tamaño en mobile */
-    }
+  .menu-img {
+    max-width: 40px !important; /* Reduce el tamaño en mobile */
+  }
 
-    .menu-icons h4 {
-        font-size: 0.9rem; /* Reduce el texto en mobile */
-    }
+  .menu-icons h4 {
+    font-size: 0.9rem; /* Reduce el texto en mobile */
+  }
 }
 /*cards de menú*/
 @media (max-width: 768px) {
-    .menu-item {
-        flex-direction: column;
-        text-align: center;
-    }
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .menu-item .col-3 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
+  .menu-item .col-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 
-    .menu-item .col-9 {
-        width: 100%;
-    }
+  .menu-item .col-9 {
+    width: 100%;
+  }
 }
 /* Ajuste del tamaño de fuente en pantallas pequeñas */
 @media (max-width: 768px) {
-    .nav-tabs .nav-link {
-        font-size: 14px; /* Reduce el tamaño de la fuente */
-        padding: 8px 12px; /* Reduce el espacio entre las opciones */
-    }
+  .nav-tabs .nav-link {
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+    padding: 8px 12px; /* Reduce el espacio entre las opciones */
+  }
 
-    .nav-item {
-        margin-right: 5px; /* Reduce la separación entre elementos */
-    }
+  .nav-item {
+    margin-right: 5px; /* Reduce la separación entre elementos */
+  }
 
-    /* Ocultar los iconos en pantallas pequeñas si no caben */
-    .nav-tabs .nav-link img {
-        display: none;
-    }
+  /* Ocultar los iconos en pantallas pequeñas si no caben */
+  .nav-tabs .nav-link img {
+    display: none;
+  }
 }
 /**ajuste inf cards productos**/
 @media (max-width: 768px) {
-    h5 {
-        font-size: 1.1rem !important; /* Reduce el tamaño del título */
-    }
+  h5 {
+    font-size: 1.1rem !important; /* Reduce el tamaño del título */
+  }
 
-    p {
-        font-size: 0.875rem; /* Reduce el tamaño del texto */
-    }
-    .btn-precio {
-        font-size: 0.875rem; /* Reduce el tamaño del precio */
-        padding: 8px 12px; /* Ajusta el padding para que no se vea muy grande */
-    }
-    .menu-item img {
-        max-width: 130px !important; /* Fuerza la reducción de las imágenes */
-        height: auto !important;
-    }
+  p {
+    font-size: 0.875rem; /* Reduce el tamaño del texto */
+  }
+  .btn-precio {
+    font-size: 0.875rem; /* Reduce el tamaño del precio */
+    padding: 8px 12px; /* Ajusta el padding para que no se vea muy grande */
+  }
+  .menu-item img {
+    max-width: 130px !important; /* Fuerza la reducción de las imágenes */
+    height: auto !important;
+  }
 }
+/* Ajuste banner */
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+  .banner-container {
+    height: 200px; /* Aumentamos la altura en móviles */
+  }
+  .banner-content {
+    width: 80%;
+    max-width: 400px;
+    left: 50%;
+  }
+  h1,
+  h2 {
+    font-size: 1rem !important;
+  }
+  .banner-container p {
+    font-size: 0.9rem !important;
+    white-space: normal !important; /* Permite que el texto se divida en varias líneas */
+    overflow: visible !important; /* Evita que el texto se corte */
+    display: block !important; /* Asegura que se mantenga en su contenedor */
+    text-align: center;
+  }
+  .banner-container button {
+    font-size: 0.9rem !important;
+    padding: 6px 12px !important;
+  }
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  width: 120px; /* Ajusta el tamaño según la imagen */
+  height: 120px;
+  background: rgba(255, 165, 0, 0.4); /* Color del resplandor */
+  border-radius: 50%; /* Forma circular */
+  filter: blur(30px); /* Efecto difuminado */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Detrás de la imagen */
+}
+
+.img-container img {
+  position: relative;
+  z-index: 2; /* Para que la imagen esté sobre el resplandor */
+}
+/**imagenes de cards index**/
+@media (max-width: 768px) {
+    .card-img-top {
+      max-width: 150px !important; /* Ajusta el tamaño máximo */
+      height: auto !important; /* Mantiene la proporción */
+      margin: 0 auto; /* Centra la imagen */
+    }
+  }
+  /** ancho de la card**/
+  @media (max-width: 768px) {
+    .card-responsive {
+      max-width: 80% !important; /* Ajusta el ancho en mobile */
+      margin: 0 auto; /* Centra la tarjeta */
+    }
+  }
