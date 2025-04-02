@@ -123,7 +123,7 @@ ul {
 }
 .menu-icons h4:hover {
   color: var(--primary-color);
-  /transform: scale(1.1); /* Aumentar ligeramente el tamaño */
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
 }
 /*Opciones del menú*/
 .nav-tabs .nav-link {
@@ -271,7 +271,7 @@ p.mb-4 {
 .btn-info {
   background-color: var(--primary-color) !important;
   color: white;
-  /font-weight: 500 !important;
+  font-weight: 500 !important;
   border: none !important;
   padding: 10px 20px;
   font-size: 16px;
