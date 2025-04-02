@@ -495,6 +495,30 @@ p.mb-4 {
   padding: 20px !important;
 }
 
+/* ajuste para clasica y xl */
+@media (max-width: 768px) {
+  
+  /* Aumentar la altura solo para las tarjetas de Hamburguesa Clásica */
+  .hamburguesa-clasica{
+    min-height: 325px;  /* Ajusta la altura de la tarjeta según lo necesario */
+  }
+  .hamburguesa-xl {
+    min-height: 110px !important;  /* Ajusta la altura de la imagen*/
+  }
+
+  /* Ajusta la altura de la imagen para Hamburguesa Clásica */
+  .hamburguesa-clasica .card-img-top {
+    max-height: 200px;  /* Ajusta la altura de la imagen de la Hamburguesa clásica */
+  }
+
+  /* Ajusta la altura de la imagen para Hamburguesa XL */
+  .hamburguesa-xl .card-img-top {
+    max-height: 0px !important;  /* Ajusta la altura de la imagen de la Hamburguesa XL */
+  }
+}
+
+
+
 /*imagenes de cards index*/
 @media (max-width: 768px) {
   .card-img-top {
@@ -503,6 +527,7 @@ p.mb-4 {
     margin: 0 auto; /* Centra la imagen */
   }
 }
+
 /* ancho de la card*/
 @media (max-width: 768px) {
   .card-responsive {
@@ -674,19 +699,20 @@ p.mb-4 {
     height: 80px; /* Mantiene la proporción */
   }
 }
-/*ajuste text opionn*/
+/*ajuste text opinion*/
 @media (max-width: 768px) {
   .titulo-opinion {
     padding: 0 1.8rem !important; /* Agrega espacio a los lados */
   }
-}
-
 /* ajuste suscripcion*/
-@media (max-width: 768px) {
   .suscripcion {
     padding: 0 1.8rem !important; /* Agrega espacio a los lados */
+    width: 100%;  /* Ajusta el ancho del formulario */
+    margin: 0 auto;  /* Centra el formulario */
   }
 }
+
+  
 
 /* Ajustes cards de galeria */
 @media (max-width: 768px) {
@@ -738,7 +764,7 @@ p.mb-4 {
     font-size: 14px !important; /* Tamaño del texto del botón */
   }
   .form-control {
-    width: 85% !important; /* Ajusta el ancho según lo necesites */
+    width: 100% !important; /* Ajusta el ancho según lo necesites */
     margin: 0 auto; /* Centrar el input */
   }
 }
@@ -749,3 +775,9 @@ p.mb-4 {
     margin: 20px;
   }
 }
+
+
+
+
+
+
