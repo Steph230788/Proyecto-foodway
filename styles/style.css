@@ -481,22 +481,19 @@ p.mb-4 {
 
 /* Estructura de la tarjeta galeria */
 .card-img-wrapper {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
-    overflow: hidden; /* Evita que la imagen se desborde */
-  }
-  
-  .card-img {
-    width: 100% !important;
-    height: auto; /* Mantiene las proporciones de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-  }
-  
-  .card-body {
-    padding: 20px !important;
-  }
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+  overflow: hidden; /* Evita que la imagen se desborde */
+}
 
+.card-img {
+  width: 100% !important;
+  height: auto; /* Mantiene las proporciones de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
 
-
+.card-body {
+  padding: 20px !important;
+}
 
 /*imagenes de cards index*/
 @media (max-width: 768px) {
@@ -691,15 +688,14 @@ p.mb-4 {
   }
 }
 
-
 /* Ajustes cards de galeria */
 @media (max-width: 768px) {
-    .container h1 {
-        font-size: 20px !important; /* Ajustar tamaño en pantallas móviles */
-        font-weight: 600 !important; /* Hacer el título más grueso */
-      }
+  .container h1 {
+    font-size: 20px !important; /* Ajustar tamaño en pantallas móviles */
+    font-weight: 600 !important; /* Hacer el título más grueso */
+  }
 
-  .tarjeta-evento{
+  .tarjeta-evento {
     padding: 20px !important; /* Reducir el espacio alrededor de cada tarjeta en pantallas móviles */
   }
 
@@ -749,7 +745,7 @@ p.mb-4 {
 
 /*footer*/
 @media (max-width: 768px) {
-.texto-resena {
-    margin: 20px ;
-}
+  .texto-resena {
+    margin: 20px;
+  }
 }
