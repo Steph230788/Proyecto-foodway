@@ -1,0 +1,14 @@
+// Variables y base
+@import "base/variables";
+@import "base/reset";
+// Componentes
+@import "components/navbar";
+@import "components/footer";
+// Páginas
+@import "pages/inicio";
+@import "pages/menu";
+@import "pages/nosotros";
+@import "pages/blog";
+@import "pages/galeria";
+// Medias Queries
+@import "responsive";

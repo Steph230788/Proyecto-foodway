@@ -1,0 +1,41 @@
+// Medias queries ajustes navbar
+
+.navbar {
+  @media (max-width: $break-md) {
+    .navbar-collapse {
+      transform: translateX(0%) !important;
+      transition: none !important;
+    }
+
+    .navbar-nav {
+      margin: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+
+      .nav-link {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $break-md) {
+    .navbar-nav {
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  // navbar expandido
+  .navbar-collapse.show {
+    @media (max-width: $break-md) {
+      .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    }
+  }
+}

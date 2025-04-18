@@ -1,0 +1,57 @@
+// Ajustes img reseña
+.resena-imgen {
+  max-width: 120px;
+  height: auto;
+}
+
+.opiniones-clientes {
+  padding-bottom: 80px;
+}
+
+// Botón personalizado
+.btn-custom {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  color: white !important;
+  font-weight: bold !important;
+
+  &:hover {
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
+// Ajuste opiniones
+.resenas-clientes {
+  p {
+    font-style: italic;
+  }
+}
+
+// Formulario de opinión
+.formulario-opinion {
+  button {
+    background-color: $primary-color;
+    color: white;
+    font-size: 16px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: $background-color;
+  }
+}
+
+.formulario-campos {
+  width: 33%;
+}

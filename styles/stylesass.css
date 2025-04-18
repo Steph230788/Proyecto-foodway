@@ -1,0 +1,661 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: #ed6300;
+}
+
+.home footer {
+  margin-top: 50px !important;
+}
+
+.banner-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.banner-container .banner-img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+.banner-container .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 600px;
+}
+.banner-container .banner-content p {
+  font-weight: 500 !important;
+}
+.banner-container .banner-content .btn-explorar-comida {
+  background-color: #ed6300 !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.banner-container .banner-content .btn-explorar-comida:hover {
+  background-color: #f4aa03 !important;
+  color: white !important;
+}
+
+.card.shadow-sm {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(225, 189, 122, 0.3) !important;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background: white;
+}
+.card.shadow-sm:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(247, 216, 158, 0.5) !important;
+}
+
+.bton-precio-card {
+  color: white !important;
+  font-weight: 600 !important;
+  background-color: #ed6300 !important;
+  border: none;
+}
+
+h2.fw-bold {
+  margin-bottom: 30px !important;
+}
+
+p.mb-4 {
+  margin-top: 20px !important;
+}
+
+.informacion {
+  padding: 50px 18%;
+}
+.informacion .informacion-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.informacion p {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.informacion .btn-info {
+  background-color: #ed6300 !important;
+  color: white;
+  font-weight: 500 !important;
+  border: none !important;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.informacion .btn-info:hover {
+  background-color: #f4aa03 !important;
+  color: white !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  height: 359px !important;
+  margin-top: 8% !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ed6300;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev {
+  left: -140px !important;
+}
+
+.carousel-control-next {
+  right: -60px !important;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 345px;
+}
+.carousel-item img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.img-container::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 165, 0, 0.4);
+  border-radius: 50%;
+  filter: blur(30px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.img-container img {
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  padding-top: 40px;
+}
+.menu h2 {
+  font-weight: 600 !important;
+  margin-bottom: 30px;
+}
+.menu .menu-icons {
+  gap: 20px;
+  padding: 10px 0;
+}
+.menu .menu-icons h4 {
+  font-weight: 550 !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.menu .menu-icons h4:hover {
+  color: #ed6300;
+  transform: scale(1.1);
+}
+.menu .menu-img {
+  max-width: 100px;
+  height: auto;
+}
+
+.nav-tabs {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.nav-tabs .nav-link {
+  color: black !important;
+  font-size: 18px;
+  padding: 12px 24px;
+}
+.nav-tabs .nav-link.active {
+  color: #ed6300 !important;
+  font: weight 200px;
+}
+
+.nav-item {
+  margin-right: 0px;
+}
+
+.btn-precio {
+  background-color: #ed6300;
+  color: white;
+  font-weight: bold;
+  padding: 6px 8px !important;
+  border-radius: 5px;
+  border: none;
+}
+
+.ubicacion {
+  margin-bottom: 80px;
+  margin-top: -40px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  margin: 0;
+}
+
+.resena-imgen {
+  max-width: 120px;
+  height: auto;
+}
+
+.opiniones-clientes {
+  padding-bottom: 80px;
+}
+
+.btn-custom {
+  background-color: #ed6300 !important;
+  border-color: #ed6300 !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.btn-custom:hover {
+  background-color: #f4aa03 !important;
+  border-color: #f4aa03 !important;
+}
+
+.resenas-clientes p {
+  font-style: italic;
+}
+
+.formulario-opinion button {
+  background-color: #ed6300;
+  color: white;
+  font-size: 16px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.formulario-opinion input,
+.formulario-opinion textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #f8f8f8;
+}
+
+.formulario-campos {
+  width: 33%;
+}
+
+.suscripcion {
+  margin-bottom: 6rem;
+  padding: 0 1.8rem !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.suscripcion .form-control {
+  border: 2px solid #ed6300;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.suscripcion .form-control:focus {
+  border-color: #f4aa03;
+  box-shadow: 0 0 5px rgba(244, 170, 3, 0.5);
+}
+.suscripcion .btn-secondary {
+  background-color: #ed6300 !important;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+.suscripcion .btn-secondary:hover, .suscripcion .btn-secondary:focus, .suscripcion .btn-secondary:active {
+  background-color: #f4aa03 !important;
+  border-color: #f4aa03 !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.text-muted {
+  margin-bottom: 2rem;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    transform: translateX(0%) !important;
+    transition: none !important;
+  }
+  .navbar .navbar-nav {
+    margin: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: flex;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .navbar-collapse.show .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .home footer {
+    margin-top: 100px !important;
+    padding-top: 20px !important;
+  }
+  .texto-resena {
+    margin: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .banner-container {
+    height: 200px;
+  }
+  .banner-container p {
+    font-size: 0.9rem !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    display: block !important;
+    text-align: center;
+  }
+  .banner-container button {
+    font-size: 0.9rem !important;
+    padding: 6px 12px !important;
+  }
+  .banner-content {
+    width: 80%;
+    max-width: 400px;
+    left: 50%;
+  }
+  h1,
+  h2 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .hamburguesa-clasica {
+    min-height: 325px;
+  }
+  .hamburguesa-clasica .card-img-top {
+    max-height: 200px;
+  }
+  .hamburguesa-xl {
+    min-height: 110px !important;
+  }
+  .hamburguesa-xl .card-img-top {
+    max-height: 0px !important;
+  }
+}
+@media (max-width: 768px) {
+  .card-img-top {
+    max-width: 150px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+  .card-responsive {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    left: -35px !important;
+  }
+  .carousel-control-next {
+    right: -35px !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-27%);
+  }
+  .carousel-item img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .carousel-item {
+    flex-direction: row;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-20%);
+  }
+}
+@media (max-width: 768px) {
+  .btn-info {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
+    font-weight: 500 !important;
+  }
+}
+@media (max-width: 768px) {
+  .informacion-titulo {
+    font-size: 20px !important;
+  }
+  .favoritos-titulo {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 375px) {
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+  .hamburguesa-clasica .card-img-top,
+  .pollo-crispy .card-img-top,
+  .hamburguesa-xl .card-img-top {
+    max-height: 100px !important;
+  }
+}
+@media (min-width: 375px) and (max-width: 475px) {
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .menu-icons {
+    gap: 10px;
+  }
+  .menu-icons h4 {
+    font-size: 0.9rem;
+  }
+  .menu-img {
+    max-width: 40px !important;
+  }
+  #menuTabs {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+  }
+  #menuTabs .nav-item {
+    flex-grow: 1;
+    text-align: center;
+  }
+  #menuTabs .nav-link {
+    font-size: 14px !important;
+    padding: 5px 8px !important;
+  }
+  #menuTabs img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-item .col-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .menu-item .col-9 {
+    width: 100%;
+  }
+  .menu-item img {
+    max-width: 130px !important;
+    height: auto !important;
+  }
+  .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .nav-tabs .nav-link img {
+    display: none;
+  }
+  .nav-item {
+    margin-right: 5px;
+  }
+  h5 {
+    font-size: 1.1rem !important;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  .btn-precio {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 375px) {
+  #menuTabs .nav-link {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 768px) {
+  .nosotros-titulo {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  .map-iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .resenas-clientes h1 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  .resenas-clientes h3 {
+    font-size: 18px !important;
+  }
+  .titulo-opinion {
+    padding: 0 1.8rem !important;
+  }
+  .titulo-opinion h2 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+  .col-md-6 form label,
+  .col-md-6 form .form-control,
+  .col-md-6 form button {
+    font-size: 14px !important;
+  }
+  .col-md-6 form .form-control::placeholder {
+    font-size: 14px !important;
+  }
+  .img-comentarios {
+    margin-bottom: -50px !important;
+  }
+  .resena {
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .resena-imgen {
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  .tarjeta-evento {
+    padding: 20px !important;
+  }
+  .card {
+    margin: 0 !important;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  .card .card-body {
+    padding: 10px !important;
+    padding-bottom: 5px !important;
+    height: 140px !important;
+  }
+  .card .card-img-wrapper {
+    max-width: 100%;
+  }
+  .card .card-img {
+    height: 330px;
+  }
+  .card .card-text {
+    font-size: 0.9rem;
+  }
+  .card .card-title {
+    font-size: 1.1rem;
+  }
+  .text-muted {
+    font-size: 0.9rem;
+  }
+  input::placeholder {
+    font-size: 14px !important;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+  .form-control {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=stylesass.css.map */

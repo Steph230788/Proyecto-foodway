@@ -1,0 +1,22 @@
+// Ajuste titulos
+@media (max-width: $break-md) {
+  .nosotros-titulo {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  // Títulos "Ubícanos" y "Disponibles para ti"
+  h3 {
+    font-size: 20px !important;
+  }
+
+  // Títulos "Dirección", "Horario", "Teléfonos"
+  h4 {
+    font-size: 18px !important;
+  }
+
+  // Ajustes del mapa
+  .map-iframe {
+    height: 300px;
+  }
+}

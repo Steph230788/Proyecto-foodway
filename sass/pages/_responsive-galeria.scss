@@ -1,0 +1,58 @@
+//Ajuste cards
+@media (max-width: $break-md) {
+  .container {
+    h1 {
+      font-size: 20px !important;
+      font-weight: 600 !important;
+    }
+  }
+
+  .tarjeta-evento {
+    padding: 20px !important;
+  }
+
+  .card {
+    margin: 0 !important;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    .card-body {
+      padding: 10px !important;
+      padding-bottom: 5px !important;
+      height: 140px !important;
+    }
+
+    .card-img-wrapper {
+      max-width: 100%;
+    }
+
+    .card-img {
+      height: 330px;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+    }
+  }
+
+  .text-muted {
+    font-size: 0.9rem;
+  }
+
+  input::placeholder {
+    font-size: 14px !important;
+  }
+
+  .btn {
+    font-size: 14px !important;
+  }
+
+  .form-control {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
