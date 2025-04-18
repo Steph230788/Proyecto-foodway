@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root {
   --bs-body-font-family: "Montserrat", sans-serif !important;
@@ -11,10 +14,14 @@
 /* Listas sin estilos */
 ul {
   list-style: none;
+  list-style: none;
 }
 
 /* variables*/
 :root {
+  --background-color: #f8f8f8;
+  --primary-color: #ed6300;
+  --secondary-color: #f4aa03;
   --background-color: #f8f8f8;
   --primary-color: #ed6300;
   --secondary-color: #f4aa03;
