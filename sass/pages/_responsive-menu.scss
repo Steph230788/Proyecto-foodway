@@ -1,0 +1,97 @@
+// Tab principal
+@media (max-width: $break-md) {
+  .menu-icons {
+    gap: 10px;
+
+    h4 {
+      font-size: 0.9rem;
+    }
+  }
+
+  .menu-img {
+    max-width: 40px !important;
+  }
+
+  // Tab M y S
+  #menuTabs {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+
+    .nav-item {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .nav-link {
+      font-size: 14px !important;
+      padding: 5px 8px !important;
+    }
+
+    img {
+      width: 18px !important;
+      height: 18px !important;
+    }
+  }
+
+  // Cards de menú
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+
+    .col-3 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .col-9 {
+      width: 100%;
+    }
+
+    img {
+      max-width: 130px !important;
+      height: auto !important;
+    }
+  }
+
+  // Nav del menú
+  .nav-tabs {
+    .nav-link {
+      font-size: 14px;
+      padding: 8px 12px;
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .nav-item {
+    margin-right: 5px;
+  }
+
+  // Ajustes info cards productos
+  h5 {
+    font-size: 1.1rem !important;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .btn-precio {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+}
+
+// Para S (≤375px)
+@media (max-width: 375px) {
+  #menuTabs {
+    .nav-link {
+      font-size: 13px !important;
+    }
+  }
+}

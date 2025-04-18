@@ -1,0 +1,136 @@
+// Ajustes banner
+@media (max-width: $break-md) {
+  .banner-container {
+    height: 200px;
+
+    p {
+      font-size: 0.9rem !important;
+      white-space: normal !important;
+      overflow: visible !important;
+      display: block !important;
+      text-align: center;
+    }
+
+    button {
+      font-size: 0.9rem !important;
+      padding: 6px 12px !important;
+    }
+  }
+
+  .banner-content {
+    width: 80%;
+    max-width: 400px;
+    left: 50%;
+  }
+
+  h1,
+  h2 {
+    font-size: 1rem !important;
+  }
+}
+
+// Ajustes para tc clásica y xl
+@media (max-width: $break-md) {
+  .hamburguesa-clasica {
+    min-height: 325px;
+
+    .card-img-top {
+      max-height: 200px;
+    }
+  }
+
+  .hamburguesa-xl {
+    min-height: 110px !important;
+
+    .card-img-top {
+      max-height: 0px !important;
+    }
+  }
+}
+
+// Imagenes de cards index
+@media (max-width: $break-md) {
+  .card-img-top {
+    max-width: 150px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .card-responsive {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+}
+
+// Control flechas información index
+@media (max-width: $break-md) {
+  .carousel-control-prev {
+    left: -35px !important;
+  }
+
+  .carousel-control-next {
+    right: -35px !important;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-27%);
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+  }
+}
+
+// Desktop - flechas y layout horizontal
+@media (min-width: 769px) {
+  .carousel-item {
+    flex-direction: row;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-20%);
+  }
+}
+
+// Botón más información
+@media (max-width: $break-md) {
+  .btn-info {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
+    font-weight: 500 !important;
+  }
+}
+
+// Títulos
+@media (max-width: $break-md) {
+  .informacion-titulo {
+    font-size: 20px !important;
+  }
+
+  .favoritos-titulo {
+    font-size: 18px !important;
+  }
+}
+
+// Cards S Inicio
+@media (max-width: 375px) {
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+
+  .hamburguesa-clasica .card-img-top,
+  .pollo-crispy .card-img-top,
+  .hamburguesa-xl .card-img-top {
+    max-height: 100px !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 475px) {
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+}

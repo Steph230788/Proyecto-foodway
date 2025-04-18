@@ -1,0 +1,171 @@
+// Banner principal
+.banner-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 600px;
+
+    p {
+      font-weight: 500 !important;
+    }
+
+    .btn-explorar-comida {
+      background-color: $primary-color !important;
+      color: white !important;
+      border: none !important;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $secondary-color !important;
+        color: white !important;
+      }
+    }
+  }
+}
+
+// Cards de inicio
+.card.shadow-sm {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(225, 189, 122, 0.3) !important;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background: white;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(247, 216, 158, 0.5) !important;
+  }
+}
+
+.bton-precio-card {
+  color: white !important;
+  font-weight: 600 !important;
+  background-color: $primary-color !important;
+  border: none;
+}
+
+h2.fw-bold {
+  margin-bottom: 30px !important;
+}
+
+p.mb-4 {
+  margin-top: 20px !important;
+}
+
+// Carrusel inicio
+.informacion {
+  padding: 50px 18%;
+
+  .informacion-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  p {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .btn-info {
+    background-color: $primary-color !important;
+    color: white;
+    font-weight: 500 !important;
+    border: none !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: $secondary-color !important;
+      color: white !important;
+    }
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  height: 359px !important;
+  margin-top: 8% !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $primary-color;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev {
+  left: -140px !important;
+}
+
+.carousel-control-next {
+  right: -60px !important;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 345px;
+
+  img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// Ajustes banner
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 165, 0, 0.4);
+    border-radius: 50%;
+    filter: blur(30px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}

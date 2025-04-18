@@ -1,0 +1,48 @@
+// Ajuste titulos, nombre usuario, cambios formulario
+@media (max-width: $break-md) {
+  .resenas-clientes {
+    h1 {
+      font-size: 20px !important;
+      font-weight: 600 !important;
+    }
+
+    h3 {
+      font-size: 18px !important;
+    }
+  }
+
+  .titulo-opinion {
+    h2 {
+      font-size: 18px !important;
+      font-weight: 600 !important;
+    }
+
+    padding: 0 1.8rem !important;
+  }
+
+  .col-md-6 form {
+    label,
+    .form-control,
+    button {
+      font-size: 14px !important;
+    }
+
+    .form-control::placeholder {
+      font-size: 14px !important;
+    }
+  }
+
+  .img-comentarios {
+    margin-bottom: -50px !important;
+  }
+
+  .resena {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .resena-imgen {
+    width: 100px;
+    height: 80px;
+  }
+}

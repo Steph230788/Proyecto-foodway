@@ -1,0 +1,19 @@
+// Reset universal y evitar desbordes
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+// Reset de listas
+ul {
+  list-style: none;
+}
+
+// Eliminar scroll horizontal global y tipografía
+html,
+body {
+  overflow-x: hidden;
+  font-family: $font-family;
+}
