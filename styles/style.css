@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root {
   --bs-body-font-family: "Montserrat", sans-serif !important;
@@ -11,10 +14,14 @@
 /* Listas sin estilos OK */
 ul {
   list-style: none;
+  list-style: none;
 }
 
 /* variables OK*/
 :root {
+  --background-color: #f8f8f8;
+  --primary-color: #ed6300;
+  --secondary-color: #f4aa03;
   --background-color: #f8f8f8;
   --primary-color: #ed6300;
   --secondary-color: #f4aa03;
@@ -45,6 +52,8 @@ ul {
 .banner-img {
   width: 100%;
   height: 100%;
+  min-height: 250px;
+  object-fit: cover;
   min-height: 250px;
   object-fit: cover;
 }
@@ -80,10 +89,13 @@ ul {
   border: none;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(225, 189, 122, 0.3) !important;
+  box-shadow: 0px 4px 15px rgba(225, 189, 122, 0.3) !important;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   background: white;
 }
 .card.shadow-sm:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(247, 216, 158, 0.5) !important;
   transform: translateY(-5px);
   box-shadow: 0px 10px 20px rgba(247, 216, 158, 0.5) !important;
 }
@@ -100,6 +112,7 @@ p.mb-4 {
   margin-top: 20px !important;
 }
 /*Carrusel inicio*/
+/*Carrusel inicio*/
 .informacion {
   padding: 50px 18%;
 }
@@ -109,6 +122,7 @@ p.mb-4 {
   margin-bottom: 15px;
 }
 .informacion p {
+  max-width: 500px;
   max-width: 500px;
   margin-bottom: 20px;
 }
@@ -121,6 +135,8 @@ p.mb-4 {
   width: 5%;
   height: 359px !important;
   margin-top: 8% !important;
+  height: 359px !important;
+  margin-top: 8% !important;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -130,14 +146,19 @@ p.mb-4 {
 }
 .carousel-control-prev {
   left: -140px !important;
+  left: -140px !important;
 }
 .carousel-control-next {
+  right: -60px !important;
   right: -60px !important;
 }
 .carousel-item img {
   max-width: 80%;
   height: auto;
+  max-width: 80%;
+  height: auto;
   display: block;
+  margin: 0 auto;
   margin: 0 auto;
 }
 .btn-info {
@@ -161,6 +182,7 @@ p.mb-4 {
   justify-content: center;
   align-items: center;
   min-height: 345px;
+  min-height: 345px;
 }
 /* Ajustes banner */
 .img-container {
@@ -173,13 +195,17 @@ p.mb-4 {
   content: "";
   position: absolute;
   width: 120px;
+  width: 120px;
   height: 120px;
   background: rgba(255, 165, 0, 0.4);
+  background: rgba(255, 165, 0, 0.4);
   border-radius: 50%;
+  filter: blur(30px);
   filter: blur(30px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
   z-index: 1;
 }
 
@@ -353,10 +379,14 @@ p.mb-4 {
 .card-img-wrapper {
   width: 100%;
   overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .card-img {
   width: 100% !important;
+  height: auto;
+  object-fit: cover;
   height: auto;
   object-fit: cover;
 }
@@ -384,6 +414,9 @@ p.mb-4 {
     display: flex !important;
     flex-direction: column !important;
     gap: 5px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
     justify-content: center !important;
     align-items: center !important;
   }
@@ -392,8 +425,10 @@ p.mb-4 {
   .navbar-nav {
     display: flex;
     gap: 50px;
+    gap: 50px;
   }
 }
+/*ajuste transición menú hamburguesa*/
 /*ajuste transición menú hamburguesa*/
 @media (max-width: 768px) {
   .navbar-collapse {
@@ -404,9 +439,20 @@ p.mb-4 {
   .navbar-nav {
     margin: auto !important;
     display: flex;
+  .navbar-collapse {
+    transform: translateX(0%) !important;
+    transition: none !important;
+  }
+
+  .navbar-nav {
+    margin: auto !important;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: center;
   }
+}
+/*ajuste letra nav*/
 }
 /*ajuste letra nav*/
 @media (max-width: 768px) {
@@ -432,6 +478,9 @@ p.mb-4 {
   }
   .banner-container p {
     font-size: 0.9rem !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    display: block !important;
     white-space: normal !important;
     overflow: visible !important;
     display: block !important;
@@ -461,6 +510,8 @@ p.mb-4 {
 @media (max-width: 768px) {
   .card-img-top {
     max-width: 150px !important;
+    height: auto !important;
+    margin: 0 auto;
     height: auto !important;
     margin: 0 auto;
   }
@@ -494,11 +545,14 @@ p.mb-4 {
   .carousel-control-next {
     top: 50%;
     transform: translateY(-27%);
+    top: 50%;
+    transform: translateY(-27%);
   }
 }
 /* Para desktop - Mantener las flechas a la mitad de la imagen */
 @media (min-width: 769px) {
   .carousel-item {
+    flex-direction: row;
     flex-direction: row;
   }
   /*Ajuste de flechas en desktop*/
@@ -517,13 +571,32 @@ p.mb-4 {
   }
 }
 /*ajuste de titulo*/
+/*ajuste de titulo*/
 @media (max-width: 768px) {
   .informacion-titulo {
     font-size: 20px !important;
   }
 }
 /*ajustes de titulo*/
+/*ajustes de titulo*/
 @media (max-width: 768px) {
+  .favoritos-titulo {
+    font-size: 18px !important;
+  }
+}
+/*cards s inicio*/
+@media (max-width: 375px) {
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+  .hamburguesa-clasica .card-img-top {
+    max-height: 100px !important;
+  }
+  .pollo-crispy .card-img-top {
+    max-height: 100px !important;
+  }
+  .hamburguesa-xl .card-img-top {
+    max-height: 100px !important;
   .favoritos-titulo {
     font-size: 18px !important;
   }
@@ -585,7 +658,36 @@ p.mb-4 {
   #menuTabs img {
     width: 18px !important;
     height: 18px !important;
+  #menuTabs {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
   }
+
+  #menuTabs .nav-item {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  #menuTabs .nav-link {
+    font-size: 14px !important;
+    padding: 5px 8px !important;
+  }
+
+  #menuTabs img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+/* Para s (≤375px) */
+@media (max-width: 375px) {
+  #menuTabs .nav-link {
+    font-size: 13px !important;
+  }
+}
+/*cards de menú*/
+@media (max-width: 768px) {
+  .menu-item {
 }
 /* Para s (≤375px) */
 @media (max-width: 375px) {
@@ -598,7 +700,21 @@ p.mb-4 {
   .menu-item {
     flex-direction: column;
     text-align: center;
+    text-align: center;
   }
+
+  .menu-item .col-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .menu-item .col-9 {
+    width: 100%;
+  }
+}
+/* nav del menú*/
 
   .menu-item .col-3 {
     width: 100%;
@@ -624,10 +740,36 @@ p.mb-4 {
 
   .nav-tabs .nav-link img {
     display: none;
+  .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .nav-item {
+    margin-right: 5px;
+  }
+
+  .nav-tabs .nav-link img {
+    display: none;
   }
 }
 /*ajuste inf cards productos...*/
+/*ajuste inf cards productos...*/
 @media (max-width: 768px) {
+  h5 {
+    font-size: 1.1rem !important;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+  .btn-precio {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+  .menu-item img {
+    max-width: 130px !important;
+    height: auto !important;
   h5 {
     font-size: 1.1rem !important;
   }
@@ -713,6 +855,18 @@ p.mb-4 {
       padding: 1rem;
       font-size: 14px;
     }
+  /* ajuste distancia entre formulario e imagen blog*/
+  @media (max-width: 768px) {
+    .img-comentarios {
+      margin-bottom: -50px !important;
+    }
+  }
+  /*ajuste tamaños de tc comentarios*/
+  @media (max-width: 768px) {
+    .resena {
+      padding: 1rem;
+      font-size: 14px;
+    }
 
     .resena-imgen {
       width: 100px;
@@ -737,7 +891,15 @@ p.mb-4 {
     .tarjeta-evento {
       padding: 20px !important;
     }
+    .tarjeta-evento {
+      padding: 20px !important;
+    }
 
+    .card {
+      margin: 0 !important;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
     .card {
       margin: 0 !important;
       border: 1px solid #ddd;
@@ -749,7 +911,15 @@ p.mb-4 {
       padding-bottom: 5px !important;
       height: 140px !important;
     }
+    .card-body {
+      padding: 10px !important;
+      padding-bottom: 5px !important;
+      height: 140px !important;
+    }
 
+    .card-img-wrapper {
+      max-width: 100%;
+    }
     .card-img-wrapper {
       max-width: 100%;
     }
@@ -757,7 +927,13 @@ p.mb-4 {
     .card-img {
       height: 330px;
     }
+    .card-img {
+      height: 330px;
+    }
 
+    .card-text {
+      font-size: 0.9rem;
+    }
     .card-text {
       font-size: 0.9rem;
     }
@@ -765,7 +941,16 @@ p.mb-4 {
     .card-title {
       font-size: 1.1rem;
     }
+    .card-title {
+      font-size: 1.1rem;
+    }
 
+    .text-muted {
+      font-size: 0.9rem;
+    }
+    input::placeholder {
+      font-size: 14px !important;
+    }
     .text-muted {
       font-size: 0.9rem;
     }
