@@ -22,7 +22,9 @@
     rel="stylesheet" />
   <!-- link scss -->
   <!-- <link rel="" href="style.scss"> -->
-  <title>Food Way</title>
+  <meta name="description"
+    content="Descubre lo mejor de Food Way: explora nuestros platos favoritos y descubre cómo preparamos cada bocado con pasión.">
+  <title>Delicias Rápidas: Hamburguesas, Pizzas y Pollo | Food Way</title>
 </head>
 
 <body class="home">
@@ -62,7 +64,7 @@
       <img src="./img/img-banner.jpg" class="w-100 banner-img" alt="imagen banner">
       <div class="banner-content">
         <h1 class="fw-bold display-6 d-md-block d-none">Sabor sin límites al instante</h1>
-        <h2 class="fw-bold fs-4 d-md-none">Sabor sin límites</h2>
+        <h2 class="fw-bold fs-4 d-md-none">Sabor sin límites al instante</h2>
         <p class="fs-5 d-md-block d-none">Platos frescos, deliciosos y listos para ti. Ven y vive la experiencia.</p>
         <a href="./pages/menu.html">
           <button class="btn btn-primary btn-explorar-comida px-4 py-2 fw-bold">Explorar comida</button>
@@ -72,7 +74,7 @@
 
     <!-- Sección favoritos -->
     <section class="container text-center my-5">
-      <h2 class="fw-bold favoritos-titulo">Los favoritos de siempre</h2>
+      <h3 class="fw-bold favoritos-titulo">Los favoritos de siempre</h3>
       <p class="mb-4">
         Hay sabores que simplemente conquistan a todos. Descubre nuestros productos más populares,
         elegidos por quienes saben disfrutar de una buena comida. <strong>¡Déjate tentar y prueba los
@@ -89,7 +91,7 @@
             <img src="./img/hamburguesa.png" class="card-img-top img-fluid" alt="Hamburguesa clásica"
               style="max-height: 180px; object-fit: contain;">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Hamburguesa clásica</h5>
+              <h4 class="card-title">Hamburguesa clásica</h4>
               <p class="card-text flex-grow-1">Carne jugosa, pan artesanal y el balance perfecto de ingredientes.
                 ¡Sencillamente deliciosa!</p>
               <button class="bton-precio-card btn btn-warning btn-sm mt-auto">$27.900</button>
@@ -103,7 +105,7 @@
             <img src="./img/pollo-frito.png" class="card-img-top img-fluid" alt="Pollo crispy"
               style="max-height: 180px; object-fit: contain;">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Pollo crispy</h5>
+              <h4 class="card-title">Pollo crispy</h4>
               <p class="card-text flex-grow-1">Crujiente por fuera, tierno por dentro y con un toque especial. ¡Puro
                 placer en cada bocado!</p>
               <button class="bton-precio-card btn btn-warning btn-sm mt-auto">$40.900</button>
@@ -117,7 +119,7 @@
             <img src="./img/papas-fritas.png" class="card-img-top img-fluid" alt="Papas fritas"
               style="max-height: 180px; object-fit: contain;">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Papas fritas</h5>
+              <h4 class="card-title">Papas fritas</h4>
               <p class="card-text flex-grow-1">Papas doradas, crujientes y con un sabor único. ¡El acompañamiento
                 perfecto!</p>
               <button class="bton-precio-card btn btn-warning btn-sm mt-auto">$8.500</button>
@@ -131,7 +133,7 @@
             <img src="./img/hamburguesa-grande.png" class="card-img-top img-fluid hamburguesa-xl" alt="Hamburguesa XL"
               style="max-height: 180px; object-fit: contain;">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Hamburguesa XL</h5>
+              <h4 class="card-title">Hamburguesa XL</h4>
               <p class="card-text flex-grow-1">Hamburguesa triple carne 100% artesanal. La más poderosa, para los
                 de buen apetito.</p>
               <button class="bton-precio-card btn btn-warning btn-sm mt-auto">$39.000</button>
@@ -148,7 +150,7 @@
           <div class="carousel-item active">
             <div class="row align-items-center d-flex flex-column-reverse flex-md-row">
               <div class="col-md-6 text-center text-md-start texto-slider">
-                <h2 class="informacion-titulo">Nuestras hamburguesas</h2>
+                <h4 class="informacion-titulo">Nuestras hamburguesas</h4>
                 <p>
                   Más que un clásico, nuestras hamburguesas están hechas con
                   ingredientes frescos y seleccionados. Descubre cómo las
@@ -169,7 +171,7 @@
           <div class="carousel-item">
             <div class="row align-items-center d-flex flex-column-reverse flex-md-row">
               <div class="col-md-6 text-center text-md-start texto-slider">
-                <h2 class="informacion-titulo">Nuestras pizzas</h2>
+                <h4 class="informacion-titulo">Nuestras pizzas</h4>
                 <p>
                   Nuestras pizzas se preparan con masa
                   artesanal y los ingredientes más frescos para garantizar un
@@ -190,7 +192,7 @@
           <div class="carousel-item">
             <div class="row align-items-center d-flex flex-column-reverse flex-md-row">
               <div class="col-md-6 text-center text-md-start texto-slider">
-                <h2 class="informacion-titulo">Nuestro pollo</h2>
+                <h4 class="informacion-titulo">Nuestro pollo</h4>
                 <p>
                   Más que un antojo, nuestro pollo crispy se prepara con un
                   empanizado dorado y crujiente, logrando el equilibrio perfecto
@@ -208,11 +210,12 @@
         </div>
 
         <!-- Controles del carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#informacionCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#informacionCarousel" data-bs-slide="prev" aria-label="Anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#informacionCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#informacionCarousel" data-bs-slide="next" aria-label="Siguiente">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
     </section>
@@ -259,9 +262,12 @@
           <div class="col-lg-2 col-md-4 col-12 d-flex flex-column h-100">
             <h5 class="text-uppercase">Síguenos</h5>
             <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-auto">
-              <a href="#" class="text-dark"><i class="bi bi-facebook fs-4"></i></a>
-              <a href="#" class="text-dark"><i class="bi bi-instagram fs-4"></i></a>
-              <a href="#" class="text-dark"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#" class="text-dark" aria-label="Facebook" title="Ir a Facebook"><i
+                  class="bi bi-facebook fs-4"></i></a>
+              <a href="#" class="text-dark" aria-label="Instagram" title="Ir a Instagram"><i
+                  class="bi bi-instagram fs-4"></i></a>
+              <a href="#" class="text-dark" aria-label="Twitter" title="Ir a Twitter"><i
+                  class="bi bi-twitter fs-4"></i></a>
             </div>
           </div>
         </div>

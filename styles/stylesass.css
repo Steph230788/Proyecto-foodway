@@ -21,7 +21,7 @@ body {
   transition: color 0.3s ease;
 }
 .navbar ul li a:hover {
-  color: #ed6300;
+  color: #cc4400;
 }
 
 .home footer {
@@ -57,7 +57,7 @@ body {
   font-weight: 500 !important;
 }
 .banner-container .banner-content .btn-explorar-comida {
-  background-color: #ed6300 !important;
+  background-color: #cc4400 !important;
   color: white !important;
   border: none !important;
   padding: 10px 20px;
@@ -85,7 +85,7 @@ body {
 .bton-precio-card {
   color: white !important;
   font-weight: 600 !important;
-  background-color: #ed6300 !important;
+  background-color: #cc4400 !important;
   border: none;
 }
 
@@ -110,7 +110,7 @@ p.mb-4 {
   margin-bottom: 20px;
 }
 .informacion .btn-info {
-  background-color: #ed6300 !important;
+  background-color: #cc4400 !important;
   color: white;
   font-weight: 500 !important;
   border: none !important;
@@ -133,7 +133,7 @@ p.mb-4 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #ed6300;
+  background-color: #cc4400;
   border-radius: 50%;
   padding: 10px;
 }
@@ -199,7 +199,7 @@ p.mb-4 {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .menu .menu-icons h4:hover {
-  color: #ed6300;
+  color: #cc4400;
   transform: scale(1.1);
 }
 .menu .menu-img {
@@ -217,7 +217,7 @@ p.mb-4 {
   padding: 12px 24px;
 }
 .nav-tabs .nav-link.active {
-  color: #ed6300 !important;
+  color: #cc4400 !important;
   font: weight 200px;
 }
 
@@ -226,7 +226,7 @@ p.mb-4 {
 }
 
 .btn-precio {
-  background-color: #ed6300;
+  background-color: #cc4400;
   color: white;
   font-weight: bold;
   padding: 6px 8px !important;
@@ -258,8 +258,8 @@ p.mb-4 {
 }
 
 .btn-custom {
-  background-color: #ed6300 !important;
-  border-color: #ed6300 !important;
+  background-color: #cc4400 !important;
+  border-color: #cc4400 !important;
   color: white !important;
   font-weight: bold !important;
 }
@@ -273,7 +273,7 @@ p.mb-4 {
 }
 
 .formulario-opinion button {
-  background-color: #ed6300;
+  background-color: #cc4400;
   color: white;
   font-size: 16px;
   padding: 8px 18px;
@@ -303,7 +303,7 @@ p.mb-4 {
   margin: 0 auto;
 }
 .suscripcion .form-control {
-  border: 2px solid #ed6300;
+  border: 2px solid #cc4400;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -313,7 +313,7 @@ p.mb-4 {
   box-shadow: 0 0 5px rgba(244, 170, 3, 0.5);
 }
 .suscripcion .btn-secondary {
-  background-color: #ed6300 !important;
+  background-color: #cc4400 !important;
   border: none;
   color: white;
   padding: 0.6rem 1rem;
