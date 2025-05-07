@@ -134,3 +134,76 @@
     font-size: 0.8rem !important;
   }
 }
+
+// ajustes 992-1199
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-responsive .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-responsive .card-text {
+    font-size: 1rem;
+  }
+
+  .card-responsive .card-img-top {
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+//ajuste 768-991
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner-content h1.display-6 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+  }
+
+  .banner-content p.fs-5.d-md-block.d-none {
+    font-size: 1.1rem !important;
+    line-height: 1.4;
+    max-width: 80%;
+    white-space: normal;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  /*Ajustes para sección información*/
+  .informacion .informacion-titulo {
+    font-size: 1.4rem !important;
+  }
+
+  .informacion .texto-slider p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    height: 204px !important;
+    overflow: hidden;
+    display: block;
+    width: 110% !important;
+  }
+
+  .informacion .btn-info {
+    font-size: 0.95rem !important;
+    padding: 6px 14px !important;
+  }
+
+  /*flechas*/
+  .carousel-control-prev {
+    left: -80px !important;
+  }
+
+  .carousel-control-next {
+    right: -50px !important;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-27%);
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+  }
+}
